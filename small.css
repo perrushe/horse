@@ -1,0 +1,562 @@
+/* ---------------------------------- */
+/* ------ MAIN BODY OF WEBSITE ------ */
+/* ---------------------------------- */
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+  -webkit-text-size-adjust: none;
+  /* This stops the iPhone from automatically changing the size of the text when you flip the phone */
+}
+
+/* ---------------------------------- */
+/* ---------- VIEW CART BTN --------- */
+/* ---------------------------------- */
+.viewCart {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  /*--- JUSTIFY CONTENT ---*/
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  /*--- END JUSTIFY CONTENT ---*/
+}
+
+/* ---------------------------------- */
+/* ------------ SIDEBAR ------------- */
+/* ---------------------------------- */
+.sidebar, #outerSidebar {
+  display: none;
+}
+
+/* ---------------------------------- */
+/* ----------- NAVIGATION ----------- */
+/* ---------------------------------- */
+#menu {
+  display: none;
+}
+
+#navToggle {
+  width: 100%;
+  background: #FCC916;
+  color: #333;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+#navToggle:before {
+  font-family: FontAwesome;
+  margin-left: 8px;
+  content: "\f0c9 ";
+  line-height: 1em;
+  font-size: 1.5em;
+}
+
+#navToggle:after {
+  margin-left: 8px;
+  content: "Menu";
+  line-height: 1em;
+  font-size: 1.5em;
+}
+
+#mobileMenu {
+  display: inline-block;
+  background: #0072BC;
+}
+#mobileMenu nav {
+  display: none;
+}
+#mobileMenu li {
+  list-style-type: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#mobileMenu li a, #mobileMenu li span {
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#mobileMenu li .current {
+  background: rgba(0, 0, 0, 0.3);
+}
+#mobileMenu li ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #222;
+}
+#mobileMenu li ul a {
+  padding-left: 30px;
+}
+#mobileMenu li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+#mobileMenu .parent > a:after {
+  font-family: FontAwesome;
+  margin-left: 8px;
+  content: "\f107";
+  line-height: 1em;
+}
+
+/* ---------------------------------- */
+/* ----------- SUB MENU ----------- */
+/* ---------------------------------- */
+#mobileMenu li ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #015b95;
+}
+
+#mobileMenu li ul a {
+  padding-left: 30px;
+}
+
+#mobileMenu li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#mobileMenu .parent > a:after {
+  font-family: FontAwesome;
+  margin-left: 8px;
+  content: "\f107";
+  line-height: 1em;
+}
+
+/* ---------------------------------- */
+/* --------- PHOTO SECTION ---------- */
+/* ---------------------------------- */
+.imageSection .item {
+  width: 46%;
+  margin: 0;
+}
+
+.contentImgRow {
+  /*--- JUSTIFY CONTENT ---*/
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  /*--- END JUSTIFY CONTENT ---*/
+  /*------ FLEX WRAP ------*/
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*------ END FLEX WRAP ------*/
+}
+
+/* ---------------------------------- */
+/* ----------- CUSTOM DIVS ---------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* ------------- FOOTER ------------- */
+/* ---------------------------------- */
+footer {
+  padding: 0 0 10px 0;
+}
+footer .container {
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+footer nav {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.2);
+  /*---- DISPLAY FLEX -----*/
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  /*---- END DISPLAY FLEX -----*/
+  /*------ FLEX ALIGN -----*/
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  /*------ END FLEX ALIGN -----*/
+  /*--- JUSTIFY CONTENT ---*/
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  /*--- END JUSTIFY CONTENT ---*/
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+footer .footerRight {
+  text-align: center;
+}
+
+/*----------------------------------------------*/
+/*--------------- ENQUIRY FORM -----------------*/
+/*----------------------------------------------*/
+#enquiry, .enqLeft, .enqRight {
+  width: 100%;
+}
+
+/* ---------------------------------- */
+/* --------- CART ITEM PAGE --------- */
+/* ---------------------------------- */
+.cartItemTop {
+  display: inline-block;
+}
+.cartItemTop .cartItemImages, .cartItemTop .cartItemMain {
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cartItemHeading {
+  font-size: 1.4em;
+}
+
+.cartItemImages .cartItemHeading, .cartItemImages .cartItemCatHeading {
+  display: inline-block;
+}
+
+.cartItemHeading {
+  margin: 10px 0;
+}
+
+.flicker {
+  margin-top: 10px;
+}
+
+.cartItemAction {
+  /*------ FLEX WRAP ------*/
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*------ END FLEX WRAP ------*/
+}
+.cartItemAction a {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: .9em;
+}
+
+.cartItemQty {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cartItemOptions {
+  width: 100%;
+  margin: 0;
+}
+.cartItemOptions .cartItemOptionHeading {
+  width: 20%;
+  text-align: left !important;
+}
+.cartItemOptions select, .cartItemOptions input {
+  width: 80%;
+}
+
+.cartItemContent .cartItemMain .cartItemPrice {
+  text-align: right;
+  font-size: 1.7em;
+  height: 42px;
+}
+.cartItemContent .cartItemMain .cartItemPrice div {
+  width: 100%;
+}
+.cartItemContent .cartItemMain .cartItemPrice span {
+  display: inline-block;
+  width: auto;
+  /*------ FLEX ORDER -----*/
+  order: 1;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  /*------ END FLEX ORDER -----*/
+  margin: 5px 0 0;
+}
+.cartItemContent .cartItemMain .cartItemCode {
+  text-align: right;
+  font-size: .8em;
+  padding: 0 10px;
+}
+
+.cartItemShortDesc {
+  padding: 10px 0;
+}
+
+.cartItemBottom {
+  padding: 0 10px;
+}
+
+/* ---------------------------------- */
+/* ----------- CART ITEMS ----------- */
+/* ---------------------------------- */
+.cartItem {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.cartItem:nth-last-child(1), .cartItem:nth-last-child(2), .cartItem:nth-last-child(3), .cartItem:nth-last-child(4) {
+  margin-bottom: 10px;
+}
+
+.cartItem:nth-last-child(1), .cartItem:nth-last-child(2) {
+  margin-bottom: 0px;
+}
+
+.cartItemPrice {
+  display: inline-block;
+  text-align: center;
+  height: 58px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.cartItemPrice span {
+  width: 100%;
+  display: inline-block;
+  font-size: .7em;
+}
+
+.cartItemBtns a {
+  padding: 5px;
+  box-sizing: border-box;
+}
+.cartItemBtns a span {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.viewCartRow {
+  /*------ FLEX WRAP ------*/
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /*------ END FLEX WRAP ------*/
+}
+
+.viewCartDescription {
+  width: 60% !important;
+}
+
+.viewCartRow {
+  font-size: .8em;
+  padding: 5px;
+}
+.viewCartRow .viewCartTotal {
+  width: 50px;
+  text-align: left;
+}
+.viewCartRow .viewCartDelete {
+  width: 25px;
+}
+
+.viewCartItem, .viewCartPrice {
+  display: none;
+}
+
+.cartUpdate, .cartSubTotal {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cartItemAction a {
+  margin-bottom: 0;
+}
+
+.viewCartQuantity {
+  display: none;
+}
+
+.cartItemAction .cartItemPrev, .cartItemAction .cartItemAdd {
+  width: 100%;
+  margin-top: 3px;
+  text-align: center;
+}
+
+/*-- CHECKOUT --*/
+.checkoutSection {
+  font-size: .9em;
+}
+
+.resumeShopping {
+  display: none;
+}
+
+.checkoutSingle {
+  display: inline-block;
+}
+
+.singleInput {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+
+.checkoutStageComplete {
+  width: 100%;
+  text-align: center;
+  /*--- JUSTIFY CONTENT ---*/
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  /*--- END JUSTIFY CONTENT ---*/
+}
+
+.cartBtn {
+  width: 100%;
+}
+
+.checkoutNext {
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.reviewQuestionRow {
+  display: inline-block;
+  width: 100%;
+}
+.reviewQuestionRow .reviewQuestion, .reviewQuestionRow .reviewQuestionAnswer {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.checkoutReviewMessage {
+  word-wrap: break-word;
+}
+
+.checkoutReview {
+  display: inline-block;
+}
+
+.checkoutSectionInner {
+  width: 100% !important;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.cartQuestionRow, .cartQuestion, .cartQuestionInput {
+  width: 100% !important;
+  display: inline-block;
+  margin: 3px 0 !important;
+}
+
+/* ---------------------------------- */
+/* -------- BANNER OF WEBSITE ------- */
+
+#logo{
+    width:500px;
+    margin-top:20px;
+    margin:0 auto;
+    max-width:420px;
+    max-height:200px;
+  left:0px;
+}
+
+
+
+.contact{
+  display:none;
+  
+}
+
+#banner{
+  margin-top:60px;
+}
+
+#banner .container{
+  border-top:0px;
+  
+}
+
+
+
+
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* -------- GRAPHICAL BUTTONS ------- */
+
+.butFrame{
+  width:100%;
+  
+}
+
+
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* -------- SLIDESHOW STYLES -------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* ---------- CUSTOM FOOTER --------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* ----------- ULTIMATE CSS --------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* ----------- CUSTOM CSS ----------- */
+
+
+
+#callbacks{
+width:100%;
+position:fixed;
+top:0px;
+background:#0072bc;
+  border-bottom:1px solid #fff;
+z-index:999;
+ display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: row;
+   -ms-flex-direction: row;
+       flex-direction: row;
+   -webkit-justify-content: space-between;
+   -ms-flex-pack: justify;
+       justify-content: space-between;
+      -webkit-align-items: center;
+   -ms-flex-align: center;
+       align-items: center;
+   -webkit-flex-flow: row wrap;
+   -ms-flex-flow: row wrap;
+       flex-flow: row wrap;
+}
+
+
+#callbacks a{
+cursor:pointer;
+padding:10px 0px;
+font-size:1.1em;
+color:#fff;
+text-decoration:none;
+width:50%;
+text-align:center;
+  text-transform:uppercase;
+}
+
+
+#callbacks a:active{
+background:#FCC916;
+}
+
+.subBannerTextContainer{
+  display:none;
+}
+
+#subBanner{
+  height:0px;
+}
+
+
+
+/* ---------------------------------- */
+
